@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" catchtap="click">{{motto}}</text>
+  </view>
+  <view class='go-list-wrapper'>
+    <view class='go-list'>
+      <navigator url="/pages/mobileTicket/index" hover-class="navigator-hover">mobileTicket</navigator>
+    </view>
+    <view class='go-list'>
+      <navigator url="/pages/list/list" hover-class="navigator-hover">查看列表</navigator>
+    </view>
+    <view class='go-list'>
+      <navigator url="/pages/picker/picker" hover-class="navigator-hover">查看picker</navigator>
+    </view>
+    <view class='go-list'>
+      <navigator url="/pages/userInfo/userInfo" hover-class="navigator-hover">查看userInfo</navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/mobileTicket/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/picker/picker",
+    "pages/userInfo/userInfo",
+    "pages/operTips/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

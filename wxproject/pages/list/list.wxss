@@ -1,0 +1,10 @@
+/* pages/list/list.wxss */
+.p-list{
+  padding: 10px 30px;
+}
+
+.movable-area{
+  height: 100px;
+  width: 100%;
+  background-color: #f3f3f3;
+}

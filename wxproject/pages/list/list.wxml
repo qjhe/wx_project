@@ -1,0 +1,28 @@
+<!--pages/list/list.wxml-->
+<view class='p-list'>
+  <ul>
+    <li>
+      <div class="item">
+        <div class="img">
+
+        </div>
+        <div class="other-info">
+          <p>北京行政副中心，通州最新消息</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</view>
+<view>
+  <rich-text name="h2" bindtap="taph2">北京行政副中心，通州最新消息</rich-text>
+</view>
+<view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <movable-area style="height: 200px;width: 200px;background: #f0f0f0;">
+    <movable-view style="height: 50px; width: 50px; background: #ccc;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+</view>

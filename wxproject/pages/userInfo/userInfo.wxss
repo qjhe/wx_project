@@ -1,0 +1,18 @@
+/* pages/userInfo/userInfo.wxss */
+.item-wrapper{
+  margin: 6px 0;
+}
+.selection{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.selection .selection_title{
+  flex: 1;
+}
+.selection .picker{
+  flex: 1;
+  text-align: right;
+}

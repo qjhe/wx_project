@@ -1,0 +1,26 @@
+<view class='selection item-wrapper'>
+  <view class='selection_title'>退款日期</view>
+  <picker class='pickerr' mode='date' bindchange='dateChange' value='{{date}}' start='2015-09-01' end='2018-01-04'>
+    <view class='picker'>
+      {{date}}
+    </view>
+  </picker>
+</view>
+
+<view class='selection item-wrapper'>
+  <view class='selection_title'>选择付款方式</view>
+  <picker class='pickerr' bindchange='selectChange' range='{{arrPayType}}'>
+    <view class='picker'>
+      {{arrPayType[index]}}
+    </view>
+  </picker>
+</view>
+
+<view class='selection item-wrapper'>
+  <view class='selection_title'>选择收货地址</view>
+  <picker mode="region" class='pickerr' bindchange='bindRegionChange' value="{{region}}" custom-item="{{customItem}}">
+    <view class='picker'>
+      {{region[0]}},{{region[1]}},{{region[2]}}
+    </view>
+  </picker>
+</view>

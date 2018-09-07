@@ -1,0 +1,41 @@
+<!--pages/mobileTicket/index.wxml-->
+<view class='t-info-wrapper'>
+  <view class='ticket-titlle'>运营商授权</view>
+  <view class='o-tips'>
+    <view>若忘记密码，移动用户请拔打<text class='a' data-num="10086" bindtap="callTel">10086</text>。</view>
+    <view>联通用户请拨打<text class='a' data-num="10010" bindtap="callTel">10010</text>。电信用户请拔打<text class='a' data-num="10000" bindtap="callTel">10000</text>。</view>
+    <view>电信用户需输入三次验证码</view>
+    <view class="show-details"><navigator url="/pages/operTips/index" hover-class="none">了解详情 <text class='right-icon'></text></navigator></view>
+  </view>
+  <view class="operator-form">
+    <view class='input-box'>
+      <text class='text'>手机号</text>
+      <view class='input-view'>
+        <input class='input' type='text' bindinput='changeIptVal' data-obj="obj" data-item="mobile" value="{{obj.mobile}}" maxlength='11' placeholder='请输入手机号码'></input>
+      </view>
+    </view>
+    <view class='input-box'>
+      <text class='text'>服务密码</text>
+      <view class='input-view'>
+        <input class='input' type='password' bindinput='changeIptVal' data-obj="obj" data-item="phonePwd" value='{{obj.phonePwd}}' placeholder=''></input>
+      </view>
+    </view>
+    <view class='input-box' wx:if='{{codeFlag}}'>
+      <text class='text'>验证码</text>
+      <view class='input-view'>
+        <input class='input' type='text' bindinput='changeIptVal' data-obj="obj" data-item="captcha" value='{{obj.captcha}}' maxlength='6' placeholder=''></input>
+      </view>
+    </view>
+    <view class='input-box' wx:if='{{queryFlag}}'>
+      <text class='text'>查询密码</text>
+      <view class='input-view'>
+        <input class='input' type='password' bindinput='changeIptVal' data-obj="obj" data-item="queryPwd" value='{{obj.queryPwd}}' maxlength='11' placeholder=''></input>
+      </view>
+    </view>
+    <view class='button-wrapper'>
+      <view class='button-box'>
+        <button class='button' bindtap="submit">下一步</button>
+      </view>
+    </view>
+  </view>
+</view>

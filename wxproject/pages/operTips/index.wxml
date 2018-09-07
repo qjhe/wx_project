@@ -1,0 +1,149 @@
+<view class="strategy-wrapper">
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{index==0?'cur':''}}" data-cur="0" bindtap="clickTab">中国移动</view>
+    <view class="swiper-tab-item {{index==1?'cur':''}}" data-cur="1" bindtap="clickTab">中国联通</view>
+    <view class="swiper-tab-item {{index==2?'cur':''}}" data-cur="2" bindtap="clickTab">中国电信</view>
+  </view>
+  <swiper current="{{index}}" duration="300" bindchange="swiperTab">
+    <swiper-item>
+      <scroll-view class="img-body" scroll-x="false" scroll-y="true" style='height: 100%;'>
+        <view class="content-block">
+          <view class="title big">一. 手机端</view>
+          <view class="title">1. 拨打 10086 找回服务密码（以北京移动为例）；</view>
+          <view class="title">2. 根据语音提示，按拨号键盘“4”选择密码服务；</view>
+          <view class="title">3. 进入密码服务后，按拨号键盘“1”选择忘记密码；</view>
+          <view class="title">4. 根据提示，输入您的身份证号码，以“#”键结束；</view>
+          <view class="title">5. 按“1”确认后，服务密码将以短信形式发送至您的手机，请注意查收。</view>
+        </view>
+        <view class="content-block">
+          <view class="title big">二. 电脑端</view>
+          <view class="title">1. 百度搜索“中国移动”，点击进入。</view>
+          <image src="../static/img/operTips/yidong1@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">2. 点击“登录”，选择“登录网上营业厅”。</view>
+          <image src="../static/img/operTips/yidong2@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">3. 输入相关信息，提交登录。</view>
+          <image src="../static/img/operTips/yidong3@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">4. 登录后回到首页，点击进入“网上营业厅”栏目。</view>
+          <image src="../static/img/operTips/yidong4@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">5. 点击左侧“办业务”-“客服密码业务”。</view>
+          <image src="../static/img/operTips/yidong5@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">6. 选择“密码重置”-“通话记录”，点击立即办理。</view>
+          <image src="../static/img/operTips/yidong6@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">7. 点击“获取验证码”，输入后提交。</view>
+          <image src="../static/img/operTips/yidong7@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">8. 根据提示进行相应输入。</view>
+          <image src="../static/img/operTips/yidong8@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">9. 填写新密码。</view>
+          <image src="../static/img/operTips/yidong9@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">10. 完成密码重置。</view>
+          <image src="../static/img/operTips/yidong10@3x.png" class="img"></image>
+        </view>
+        <view style="height:30px;"></view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <scroll-view class="img-body" scroll-x="false" scroll-y="true" style='height: 100%;'>
+        <view class="content-block">
+          <view class="title">初始密码为手机号后6位，如已修改过初始密码并忘记，请通过以下方式找回或重置密码。</view>
+        </view>
+        <view class="content-block">
+          <view class="title big">一. 手机端</view>
+          <view class="title">手机发送短信“
+            <span class="blue-text">MMCZ</span>#
+            <span class="blue-text">6位新密码</span>#
+            <span class="blue-text">证件号后6位</span>”至10010根据提示进行重置密码操作。</view>
+        </view>
+        <view class="content-block">
+          <view class="title big">二. 电脑端</view>
+          <view class="title">1. 百度搜索“联通营业厅”，点击进入。</view>
+          <image src="../static/img/operTips/liantong1@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">2. 点击“我的联通”—“个人信息”。</view>
+          <image src="../static/img/operTips/liantong2@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">3. 点击“忘记密码”进入密码重置页。</view>
+          <image src="../static/img/operTips/liantong3@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">4. 填写“账户名 (手机号) ”和“验证码”进入下一步。</view>
+          <image src="../static/img/operTips/liantong4@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">5. 填写身份证后6位及短信验随机码。</view>
+          <image src="../static/img/operTips/liantong5@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">6. 填写新密码。</view>
+          <image src="../static/img/operTips/liantong6@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">7. 完成密码重置。</view>
+          <image src="../static/img/operTips/liantong7@3x.png" class="img"></image>
+        </view>
+        <view style="height:30px;"></view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <scroll-view class="img-body" scroll-x="false" scroll-y="true" style='height: 100%;'>
+        <view class="content-block">
+          <view class="title big">一. 手机端</view>
+          <view class="title">1. 拨打10000电信服务电话（以北京电信为例）；</view>
+          <view class="title">2. 根据语音提示，按拨号键盘“2”选择密码服务；</view>
+          <view class="title">3. 进入密码服务后，按拨号键盘“1”选择移动电话密码维护；</view>
+          <view class="title">4. 根据提示，按拨号键盘“1”选择密码获取；</view>
+          <view class="title">5. 密码已重置，新密码将以短信形式发送至您的手机。</view>
+        </view>
+        <view class="content-block">
+          <view class="title big">二. 电脑端</view>
+          <view class="title">1. 百度搜索“中国电信”，点击进入。</view>
+          <image src="../static/img/operTips/dianxin1@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">2. 点击“登录”进入登录页面。</view>
+          <image src="../static/img/operTips/dianxin2@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">3. 点击“忘记密码”。</view>
+          <image src="../static/img/operTips/dianxin3@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">4. 选择中间项，进入下一步。</view>
+          <image src="../static/img/operTips/dianxin4@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">5. 选定“密码重置”-“手机密码找回”，填写对应信息点击“确定”。</view>
+          <image src="../static/img/operTips/dianxin5@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">6. 输入新密码及验证码，点击“确定”。</view>
+          <image src="../static/img/operTips/dianxin6@3x.png" class="img"></image>
+        </view>
+        <view class="content-block">
+          <view class="title">7. 完成密码重置。</view>
+          <image src="../static/img/operTips/dianxin7@3x.png" class="img"></image>
+        </view>
+        <view style="height:30px;"></view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
